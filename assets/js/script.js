@@ -66,7 +66,7 @@ function generatePassword() {
 
     var newPassString = newPassword.join("");
 
-    for (var i = 0; i <= lengthInput; i++) {
+    for (var i = 0; i <= lengthInput - 1; i++) {
       var randomPass = newPassString.charAt(Math.floor(Math.random() * newPassString.length));
       password = password.concat(randomPass);
     };
